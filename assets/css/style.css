@@ -104,7 +104,7 @@ body {
 /* Awards */
 .agency-awards {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     text-align: center;
     padding-top: 30px;
     justify-content: space-around;
@@ -126,6 +126,58 @@ height: 103px;
     flex: 1 0 362px 389px;
     border-radius: 10px;
 }
+
+.solutions{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.solutions .left-side-s .h1{
+    color: white;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.solutions .left-side-s .p{
+    color: white;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.solutions .right-side-s img{
+    height: 500px;
+}
+
+.footer {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.footer .ai{
+    color: var(--3-a-68-b-8, #3A68B8);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer .phone{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 
 
 
@@ -213,6 +265,23 @@ header .button {
 }
 
 
+.panel{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.solutions .right-side-s img{
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.solution .right-side-s{
+    padding-top: 20px;
+}
+
+
 /* planshet ucun */
 @media(min-width:768px) {
     header .nav-links {
@@ -247,6 +316,15 @@ header .button {
         height: 500px;
     }
 
+    .solutions{
+        justify-content: center;
+    }
+
+    .solutions .right-side-s img{
+        display: block;
+        margin: 0 auto;
+    }
+
     .partners-company .companies .company2:nth-child(2) {
         display: block;
     }
@@ -270,10 +348,12 @@ header .button {
     }
 
     .introduction {
-        padding: 40px 100px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        padding-left: 250px;
+        padding-right: 250px;
+        padding-bottom: 50px;
+        align-items: center;
+        justify-content: space-around;
     }
 
     .partners-company .companies .company3:nth-child(3),
@@ -294,4 +374,13 @@ header .button {
     width: 700px;
     height: 550px;
     }
-}
+
+    .solutions{
+        display: flex;
+        padding-left: 250px;
+        padding-right: 250px;
+        padding-bottom: 50px;
+        align-items: center;
+        justify-content: space-around;
+    }
+} 
